@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technologies</title>
+</head>
+<body>
+  <style>
+    body {
+      background-image: radial-gradient(rgb(255, 90, 90) , rgb(28, 128, 0), skyblue);
+      
+    }
+    .container {
+      background-image: radial-gradient(rgb(219, 217, 112) , rgb(146, 235, 146), rgb(12, 108, 146));
+      padding: 20px;
+      margin: 20px auto;
+      width: 300px;
+      margin-top: 130px;
+      border-radius: 15px;
+    }
+    h1 {
+      color: red;
+      text-align: center;
+      
+    }
+    ul { 
+      padding: 5px;
+      background-color: aqua;
+      border-radius: 10px;
+      
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    button {
+      background-color: rgb(0, 21, 255);
+      color: rgb(255, 255, 255);
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 15px;
+      margin-top: 4px;
+      display: flex;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Technologies</h1>
+    <ul>
+      <ol>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Bootstrap</li>
+      <li>React</li>
+      <ol>
+    </ul>
+    <input type="checkbox">Need to home</input>
+    <button id="homeButton">Sumbit</button>
+  </div>
+
+  <script>
+    const checkbox = document.getElementById('checkbox');
+    const submitButton = document.getElementById('submitButton');
+
+    checkbox.addEventListener('click', () => {
+      // Redirect to home page (replace 'home.html' with your actual home page URL)
+      window.location.href = 'home.html';
+    });
+
+    submitButton.addEventListener('click', () => {
+      // Perform submit action (e.g., send data to server)
+      console.log('Form submitted!');
+    });
+  </script>
+</body>
+</html>
